@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { Shop } from "./pages/shop/shop";
@@ -8,7 +7,7 @@ import { ShopContextProvider } from "./context/shop-context";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full h-auto min-h-screen font-sans m-0 p-0">
       <ShopContextProvider>
         <Router>
           <Navbar />

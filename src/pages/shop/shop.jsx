@@ -6,13 +6,9 @@ import "./shop.css";
 export const Shop = () => {
   return (
     <div className="shop">
-      <div className="shopTitle">
-        <h1>PedroTech Shop</h1>
-      </div>
-
-      <div className="products">
+      <div className="products w-full h-auto grid grid-cols-3 place-items-center">
         {PRODUCTS.map((product) => (
-          <Product data={product} />
+          <Product data={product} key={product.id}/>
         ))}
       </div>
     </div>
